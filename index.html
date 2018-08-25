@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Form</title>
+</head>
+<body>
+    <header>
+        <h1>Personal Information</h1>
+    </header>
+        <form action="index.html" method="POST">
+            <fieldset>
+                <legend>Personal</legend>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Name" required>
+
+                <label for="birthday">Birthday:</label>
+                <input type="date" name="birthday" id="birthday" required>
+
+                <label for="animal">Favorite Animal:</label>
+                <select id="animal" required>
+                <option value=" ">Choose one please</option>
+                <option value="Cat">Cat</option>
+                <option value="Dog">Dog</option>
+                <option value="Rabbit">Rabbit</option>
+                <option value="Hamster">Hamster</option>
+                <option value="Monkey">Monkey</option>
+                <option value="Tiger">Tiger</option>
+                </select>
+
+            </fieldset>
+            <br>
+
+            <fieldset>
+                <legend>Account</legend>
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" placeholder="account@email.com" required>
+
+                <label for="password">Password:</label>
+                <input type="password" name="password" id="password" pattern=".{6,}"  required>
+
+                <label for="verify">Verify Password:</label>
+                <input type="password" name="verify" id="verify"  pattern=".{6,}" required>
+
+            </fieldset>
+            <br>
+
+            <fieldset>
+                <legend>Contact</legend>
+                <label for="adress">Adress:</label>
+                <input type="text" name="adress" id="adress" placeholder="Add an adress" required>
+
+                <label for="city">City:</label>
+                <select id="city" required>
+                <option value=" ">Choose one please</option>
+                <option value="San Salvador">San Salvador</option>
+                <option value="Roma">Roma</option>
+                <option value="New York">New York</option>
+                <option value="Madrid">Madrid</option>
+                <option value="Paris">Paris</option>
+                </select>
+
+                <label for="country">Countr:</label>
+                <select id="country" required>
+                <option value=" ">Choose one please</option>
+                <option value="El Salvador">El Salvador</option>
+                <option value="Italy">Italy</option>
+                <option value="USA">USA</option>
+                <option value="Spain">Spain</option>
+                <option value="France">France</option>
+                </select>
+
+                <label for="phone"> Phone Number: </label>
+                <input type="tel" name="phone" id="phone" pattern="[0-9]{4}-[0-9]{4}" placeholder="7544-1234" required>
+
+
+            </fieldset>
+            <br>
+
+            <input type="submit" value="Send">
+
+
+        </form>
+</body>
+</html>
